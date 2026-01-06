@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e7b2f4d-6b0a-4bc6-b4fc-32a2721ac815" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/types/images.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/(tabs)/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/(tabs)/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +49,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/(root)/(tabs)" />
     </key>
@@ -69,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1767522107535</updated>
       <workItem from="1767522108555" duration="2079000" />
-      <workItem from="1767524533216" duration="17765000" />
+      <workItem from="1767524533216" duration="18316000" />
     </task>
     <servers />
   </component>
