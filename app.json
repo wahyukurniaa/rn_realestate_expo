@@ -41,6 +41,18 @@
             "backgroundColor": "#000000"
           }
         }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Rubik-Bold.tff",
+            "./assets/fonts/Rubik-ExtraBold.tff",
+            "./assets/fonts/Rubik-Medium.tff",
+            "./assets/fonts/Rubik-Regular.tff",
+            "./assets/fonts/Rubik-SemiBold.tff"
+          ]
+        }
       ]
     ],
     "experiments": {
