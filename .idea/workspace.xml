@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8e7b2f4d-6b0a-4bc6-b4fc-32a2721ac815" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sign-in.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sign-in.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,12 +69,15 @@
       <option name="presentableId" value="Default" />
       <updated>1767522107535</updated>
       <workItem from="1767522108555" duration="2079000" />
-      <workItem from="1767524533216" duration="20404000" />
+      <workItem from="1767524533216" duration="24592000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_CHUNK_COMMIT_MESSAGE" value="change-type-image" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
