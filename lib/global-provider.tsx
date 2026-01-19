@@ -1,7 +1,7 @@
 import {createContext, ReactNode, useContext} from "react";
 
 interface GlobalContextTypes {
-    isLoggedIn: boolean;
+    isLogged: boolean;
     user: User;
     loading: boolean;
     refetch: () => void;
@@ -20,12 +20,12 @@ interface GlobalProviderProps {
 }
 
 export const GlobalProvider = ({ children }: GlobalProviderProps) => {
-    // const {data: user,loading,refetch} = useAppwrite()
-    // const isLoggedIn = !!user
+    const {data: user,loading,refetch} = useApp()
+    const isLogged = !!user
 
-    // return(
-    //     <GlobalContext.Provider value={{isLoggedIn, loading, user, refetch }}>{children}</GlobalContext.Provider>
-    // )
+    return(
+        <GlobalContext.Provider value={{isLogged, loading, user, refetch }}>{children}</GlobalContext.Provider>
+    )
 }
 
 export const useGlobalContext = () : GlobalContextTypes =>{
@@ -34,7 +34,6 @@ export const useGlobalContext = () : GlobalContextTypes =>{
         throw new Error(
             "useGlobalContext must be used within a GlobalProvider"
         )
-
     }
     return context;
 }
