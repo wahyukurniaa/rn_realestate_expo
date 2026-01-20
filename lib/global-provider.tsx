@@ -1,4 +1,6 @@
 import {createContext, ReactNode, useContext} from "react";
+import {useAppwrite} from "@/lib/useAppwrite";
+import {getCurrentUser} from "@/lib/appwrite";
 
 interface GlobalContextTypes {
     isLogged: boolean;
@@ -20,12 +22,21 @@ interface GlobalProviderProps {
 }
 
 export const GlobalProvider = ({ children }: GlobalProviderProps) => {
-    const {data: user,loading,refetch} = useApp()
+    const {data: user,loading,refetch} = useAppwrite({fn: getCurrentUser});
     const isLogged = !!user
 
-    return(
-        <GlobalContext.Provider value={{isLogged, loading, user, refetch }}>{children}</GlobalContext.Provider>
-    )
+    return (
+        <GlobalContext.Provider
+            value={{
+                isLogged,
+                user,
+                loading,
+                refetch,
+            }}
+        >
+            {children}
+        </GlobalContext.Provider>
+    );
 }
 
 export const useGlobalContext = () : GlobalContextTypes =>{
