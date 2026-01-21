@@ -2,17 +2,21 @@ import {
     Account,
     Databases,
     Avatars,
-    Storage,
+    Storage, Client,
 } from "appwrite";
 
-// export const client = new Client();
-// client
-//     .setEndpoint(config.endpoint!)
-//     .setProject(config.projectId!)
-//     .setPlatform(config.platform!);
-//
-// export const avatar = new Avatars(client);
-// export const account = new Account(client);
+export const config = {
+    endpoint: process.env.EXPO_PUBLIC_APPWRITE_ENDPOINT,
+    projectId: process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID,
+    databaseId: process.env.EXPO_PUBLIC_APPWRITE_DATABASE_ID,
+}
+export const client = new Client();
+client
+    .setEndpoint(config.endpoint!)
+    .setProject(config.projectId!)
+
+export const avatar = new Avatars(client);
+export const account = new Account(client);
 // export const databases = new Databases(client);
 // export const storage = new Storage(client);
 
