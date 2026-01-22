@@ -17,8 +17,8 @@ client
 
 export const avatar = new Avatars(client);
 export const account = new Account(client);
-// export const databases = new Databases(client);
-// export const storage = new Storage(client);
+export const databases = new Databases(client);
+export const storage = new Storage(client);
 
 export async function getCurrentUser() {
     try {
